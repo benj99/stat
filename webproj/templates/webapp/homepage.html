@@ -1,0 +1,107 @@
+
+{% extends 'webapp/base.html' %}
+{% block body_block %}
+{%load static%}
+<div class="jumbotron" style="background-color: #fce4ec;">
+<h1 class="text-center">Mimi's Homepage</h1>
+</div>
+
+<div class="d-flex justify-content-center">
+
+<div class="row">
+
+  <div class="d-flex justify-content-center">
+  <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="500">
+          <img src="{% static "images/mimi.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="500">
+        <img src="{% static "images/mimi2.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="500">
+        <img src="{% static "images/mimi3.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="card text-white mb-3" style="background-color: #f48fb1; width: 18rem;">
+    <img src="{% static "images/mimipink2s.png" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Mimi :)</h5>
+      <p class="card-text text-center">Here are pictures of Mimi. Click below ;)</p>
+      <a href="{% url 'webapp:pictures' %}" style="background-color: pink;" class="btn btn-outline-danger text-white d-flex justify-content-center">Pictures</a>
+    </div>
+  </div>
+
+
+<div class="d-flex justify-content-center">
+<div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{% static "images/mimiclose.jpg" %}" class="d-block w-100" alt="fuck">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "images/mimiflower.jpg" %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "images/mimimanny.jpg" %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+<!--
+<div class="row card-deck">
+<div class="card text-white bg-primary mb-3" style="width: 18rem;">
+  <img src="static/images/mimi.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi :)</h5>
+    <p class="card-text">Here is a picture of Mimi</p>
+    <a href="{% url 'webapp:pic1' %}" class="btn btn-warning">Pic1</a>
+  </div>
+</div>
+
+
+
+
+<div class="card text-white bg-warning mb-3" style="width: 18rem;">
+  <img src="static/images/mimi2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi ;)</h5>
+    <p class="card-text">Here is another one</p>
+    <a href="{% url 'webapp:pic2' %}" class="btn btn-danger">Pic2</a>
+  </div>
+</div>
+
+<div class="card text-white bg-success mb-3" style="width: 18rem;">
+  <img src="static/images/mimi3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi c:</h5>
+    <p class="card-text">One more for goood measure</p>
+    <a href="{% url 'webapp:pic3' %}" class="btn btn-primary">Pic3</a>
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="card">
+  <div class="card-header">
+    Quote
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>One man's trash is another man's Christmans gift for Dad!</p>
+      <footer class="blockquote-footer">Gene Belcher <cite title="Source Title">Bob's Burgers, Season 5:Father of the Bob</cite></footer>
+    </blockquote>
+  </div>
+</div>
+-->
+
+
+{% endblock %}
